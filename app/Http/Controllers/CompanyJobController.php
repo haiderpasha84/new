@@ -163,12 +163,4 @@ class CompanyJobController extends Controller
     }
 
 
-    protected function deleteJob(Schedule $schedule)
-    {
-         $schedule->call(function () {
-             Job::where('jdeadline','<', Carbon::now())->delete();
-         })->everyMinute();
-    }
-
-
 }

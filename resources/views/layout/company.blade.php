@@ -53,14 +53,14 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="margin-top:-70px;">
+        <div class="sidebar-brand-icon">
         <div>
 						<a href="#"><img src="images/logonew.png" height="70px;"width="240px;" class="logo" alt=""></a>
 					</div>
         </div>
-        <!-- <div class="sidebar-brand-text mx-3">Hi! Company </div> -->
- 
+        
+        
       </a>
 
       <!-- Divider -->

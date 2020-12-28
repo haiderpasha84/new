@@ -75,14 +75,7 @@
 						<h2 class="m-b5 counter">1800</h2>
 						<h6 class="fw3">Jobs Posted</h6>
 					</div>
-					<div class="head-counter-bx">
-						<h2 class="m-b5 counter">4500</h2>
-						<h6 class="fw3">Tasks Posted</h6>
-					</div>
-					<div class="head-counter-bx">
-						<h2 class="m-b5 counter">1500</h2>
-						<h6 class="fw3">Freelancers</h6>
-					</div>
+					
 				</div>
 				
 				<div class="row sp10">
