@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use app\User;
+use App\Job;
 use Illuminate\Http\Request;
 use App\Charts\UsersChart;
 
@@ -22,10 +23,12 @@ class CompanyController extends Controller
      */
     public function index()
     {
+        $today_users = Job::whereDate('created_at', today())->count();
+        $yesterday_users = Job::whereDate('created_at', today()->subDays(1))->count();
+        $users_2_days_ago = Job::whereDate('created_at', today()->subDays(2))->count();
         $chart = new UsersChart;
-        $chart->labels(['One', 'Two', 'Three']);
-        $chart->dataset('My dataset', 'line', [1, 2, 3, 4]);
-        $chart->dataset('My dataset 2', 'line', [4, 3, 2, 1]);
+        $chart->labels(['2 days ago', 'Yesterday', 'Today']);
+        $chart->dataset('Total Jobs recently', 'line', [$users_2_days_ago, $yesterday_users, $today_users]);
         return view('company.index' , compact('chart'));
     }
 
