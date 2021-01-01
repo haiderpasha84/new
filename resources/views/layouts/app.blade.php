@@ -134,29 +134,7 @@
 						<a href="/register" class="site-button"><i class="fa fa-user"></i> Sign Up</a>
 						}
 						@endif -->
-						@if(!Auth::check())
-						<a href="/login" class="site-button"><i class="fa fa-lock"></i> login</a>
-						<a href="/register" class="site-button"><i class="fa fa-user"></i> Sign Up</a>
-						<a href="/com" class="site-button"><i class="fa fa-user"></i> Join As A Company</a>
 						
-						
-						@else 
-							<a class="site-button" href="{{ url('/logout') }}">Logout</a>
-						
-						@endif
-
-
-                            <!-- <a href="/register" class="site-button"><i class="fa fa-user"></i> Sign Up</a> -->
-
-							<!-- @if(Auth::check())
-							<a href="{{route('admin.index')}}" class="site-button"><i class="fa fa-lock"></i> Admin</a>
-							
-							
-							
-							@else
-								<a href="/login" class="site-button"><i class="fa fa-lock"></i> login</a>
-							@endif -->
-
                            
 							
                         </div>
@@ -230,6 +208,15 @@
 									<li><a href="blog-details.html" class="dez-page">Blog Details</a></li>
 								</ul>
 							</li> -->
+							<li style="text-align: right;padding-right: 50px;">
+							@if(!Auth::check())
+							<a href="/login" class="site-button" style="color:white;"><i class="fa fa-lock" style="color:white;" ></i> login</a>
+							<a href="/register" class="site-button"style="color:white;" ><i class="fa fa-user" style="color:white;"></i> Sign Up</a>
+							<a href="/com" class="site-button" style="color:white;"><i class="fa fa-user" style="color:white;"></i> Join As A Company</a>
+							@else
+							<a class="site-button" href="{{ url('/logout') }}" >Logout</a>
+							@endif
+							</li>
 						</ul>			
                     </div>
                 </div>

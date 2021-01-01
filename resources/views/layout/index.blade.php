@@ -100,11 +100,11 @@
 								<a href="{{route('contactus')}}">Contact Us </a>
 
 							</li>
-							<li style="text-align: right;padding-right: 20px;">
+							<li style="text-align: right;padding-right: 50px;">
 							@if(!Auth::check())
-							<a href="/login" class="site-button"><i class="fa fa-lock"  ></i> login</a>
-							<a href="/register" class="site-button" ><i class="fa fa-user" style="padding-left:10px;"></i> Sign Up</a>
-							<a href="/com" class="site-button" ><i class="fa fa-user" style="padding-left:10px;"></i> Join As A Company</a>
+							<a href="/login" class="site-button" style="color:white;"><i class="fa fa-lock" style="color:white;" ></i> login</a>
+							<a href="/register" class="site-button"style="color:white;" ><i class="fa fa-user" style="color:white;"></i> Sign Up</a>
+							<a href="/com" class="site-button" style="color:white;"><i class="fa fa-user" style="color:white;"></i> Join As A Company</a>
 							@else
 							<a class="site-button" href="{{ url('/logout') }}" >Logout</a>
 							@endif
