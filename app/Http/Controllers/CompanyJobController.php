@@ -50,7 +50,7 @@ class CompanyJobController extends Controller
         $input = request()->validate([
             'jname' => 'required',
             'jtype'=> 'required',
-            'jimage'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:6144',
+            'jimage'=>'required|image|mimes:jpeg,jpg,gif,svg,png|max:10240',
             'jdescription'=> 'required',
             'jrequirements'=> 'required',
             'jaddress'=> 'required',
@@ -66,21 +66,18 @@ class CompanyJobController extends Controller
         $input['jdeadline'] = $date;   
         auth()->user()->jobs()->create($input);
         Session::flash('JobCreatedMessage', 'Job Added Successfully Kindly Wait For Approval By Admin');
-        return redirect()->route('companyjob.index');
+
         
         // delete job if current date is greater than deadline
         $schedule->call(function () {
             Job::where('jdeadline','<', Carbon::now())->delete();
         })->everyMinute();
 
-                // // delete job if date is greater than deadline
-                // $schedule->call(function () {
-                //     if(Job::where('jdeadline','<', Carbon::now())){
-                //         $request->jstatus = 0;
-                //         $request->update();
-                //     }
-                    
-                // })->everyMinute();
+
+        return redirect()->route('companyjob.index');
+        
+        
+
     }
 
     /**

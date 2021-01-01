@@ -34,8 +34,8 @@
 					<div class="col-md-12 m-b30">
 						<div class="p-a30 border-1  max-w500 m-auto">
 							<div class="tab-content">
-                             <form method="POST" action="/comreg" id="login" class="tab-pane active">
-                                 @csrf
+                             <form method="POST" action="{{route('company.store')}}" id="login" class="tab-pane active">
+                                {{csrf_field()}}
 								
 									<h4 class="font-weight-700">PERSONAL INFORMATION</h4>
 									<p class="font-weight-600">If you have an account with us, please log in.</p> 

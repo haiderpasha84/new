@@ -15,6 +15,6 @@ class DatabaseSeeder extends Seeder
         // factory('App\User' , 10)->create()->each(function($user){
         //     $user->jobs()->save(factory('App\Job')->make());    
         // });
-        //$this->call(LaratrustSeeder::class);
+        $this->call(LaratrustSeeder::class);
     }
 }

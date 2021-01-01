@@ -23,7 +23,6 @@ Route::get('/contactus', 'ContactusController@index')->name('contactus');
 Route::get('/browsejob/{job}', 'BrowseJobController@showsingle')->name('browsejobsingle');
 
 Route::get('/resume', 'SubmitResumeController@index')->name('resume');
-
 // search
 Route::get('search', 'SearchController@index')->name('search');
 
@@ -57,7 +56,8 @@ Route::delete('/company/jobs/{job}/destroy', 'CompanyJobController@destroy')->na
 Route::get('/company/jobs/{job}/edit', 'CompanyJobController@edit')->name('companyjob.edit');
 Route::patch('/company/jobs/{job}/update', 'CompanyJobController@update')->name('companyjob.update');
 //for company registration
-Route::resource('/comreg', 'CompanyRegController');
+Route::get('/com', 'CompanyRegController@index')->name('company.index');
+Route::post('/comreg', 'CompanyRegController@store')->name('company.store');
 
 
 

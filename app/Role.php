@@ -7,7 +7,7 @@ use Laratrust\Models\LaratrustRole;
 
 class Role extends LaratrustRole
 {
-    public function users()
+    public function role()
 {
   return $this->belongsToMany('App\User');
 }

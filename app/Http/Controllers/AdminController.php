@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\User;
+use App\Charts\UsersChart;
 
 use Illuminate\Http\Request;
 
@@ -19,7 +21,13 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view ('admin.index');
+        $today_users = User::whereDate('created_at', today())->count();
+        $yesterday_users = User::whereDate('created_at', today()->subDays(1))->count();
+        $users_2_days_ago = User::whereDate('created_at', today()->subDays(2))->count();
+        $chart = new UsersChart;
+        $chart->labels(['2 days ago', 'Yesterday', 'Today']);
+        $chart->dataset('Users Joined', 'line', [$users_2_days_ago, $yesterday_users, $today_users]);
+        return view ('admin.index', compact('chart'));
     }
 
     /**

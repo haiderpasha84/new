@@ -81,7 +81,7 @@
 						@if(!Auth::check())
 							<a href="/login" class="site-button"><i class="fa fa-lock"></i> login</a>
 							<a href="/register" class="site-button"><i class="fa fa-user"></i> Sign Up</a>
-							<a href="/comreg" class="site-button"><i class="fa fa-user"></i> Join As A Company</a>
+							<a href="/com" class="site-button"><i class="fa fa-user"></i> Join As A Company</a>
 						@else
 						<a class="site-button" href="{{ url('/logout') }}">Logout</a>
 						@endif							

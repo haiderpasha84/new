@@ -11,6 +11,14 @@ use Illuminate\Http\Request;
 
 class CompanyRegController extends Controller
 {
+
+    
+    /**
+     * Where to redirect users after registration.
+     *
+     * @var string
+     */
+    protected $redirectTo = '/login';
     /**
      * Display a listing of the resource.
      *
@@ -18,6 +26,7 @@ class CompanyRegController extends Controller
      */
     public function index()
     {
+        
         return view('company.companyregister');
     }
 
@@ -45,7 +54,6 @@ class CompanyRegController extends Controller
             'name' => $request['name'],
             'email' => $request['email'],
             'password' => Hash::make($request['password']),
-            
         ]);
         $user->attachRole('company');
         return redirect('/login');
