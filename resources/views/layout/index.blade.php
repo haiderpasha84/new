@@ -70,21 +70,13 @@
                         <div class="extra-cell">
 						
 
-						<!-- @if(Auth::check()){
-						<a class="site-button" href="{{ url('/logout') }}">Logout</a>
-						}
-						else {
-						<a href="/login" class="site-button"><i class="fa fa-lock"></i> login</a>
-						<a href="/register" class="site-button"><i class="fa fa-user"></i> Sign Up</a>
-						}
-						@endif -->
-						@if(!Auth::check())
+						<!-- @if(!Auth::check())
 							<a href="/login" class="site-button"><i class="fa fa-lock"></i> login</a>
 							<a href="/register" class="site-button"><i class="fa fa-user"></i> Sign Up</a>
 							<a href="/com" class="site-button"><i class="fa fa-user"></i> Join As A Company</a>
 						@else
 						<a class="site-button" href="{{ url('/logout') }}">Logout</a>
-						@endif							
+						@endif							 -->
                         </div>
                     </div>
                     <!-- Quik search -->
@@ -95,7 +87,7 @@
                         </form>
                     </div>
                     <!-- main nav -->
-                    <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
+                    <div class="header-nav navbar-collapse collapse " id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
 							<li class="active">
 								<a href="{{route('home')}}">Home </a>
@@ -108,8 +100,20 @@
 								<a href="{{route('contactus')}}">Contact Us </a>
 
 							</li>
-						</ul>			
-                    </div>
+							<li style="text-align: right;padding-right: 20px;">
+							@if(!Auth::check())
+							<a href="/login" class="site-button"><i class="fa fa-lock"  ></i> login</a>
+							<a href="/register" class="site-button" ><i class="fa fa-user" style="padding-left:10px;"></i> Sign Up</a>
+							<a href="/com" class="site-button" ><i class="fa fa-user" style="padding-left:10px;"></i> Join As A Company</a>
+							@else
+							<a class="site-button" href="{{ url('/logout') }}" >Logout</a>
+							@endif
+							</li>
+
+						</ul>	
+							
+								
+                    </div>	
                 </div>
             </div>
         </div>
