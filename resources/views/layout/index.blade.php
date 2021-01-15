@@ -14,11 +14,11 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON -->
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	<link rel="icon" href="images/cu.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/cu.jpeg" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title>Job Vac </title>
+	<title>Spectrum </title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,7 +56,7 @@
                 <div class="container clearfix">
                     <!-- website logo -->
                     <div class="logo-header mostion">
-						<a href="/home"><img src="images/logonew.png" class="logo" alt=""></a>
+						<a href="/home"><img src="images/cu1.jpeg" class="logo" alt="" style="height:100px;width:180px;"></a>
 					</div>
                     <!-- nav toggle button -->
                     <!-- nav toggle button -->
@@ -133,7 +133,7 @@
                 <div class="row">
 					<div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
                         <div class="widget">
-                            <img src="images/logonew.png" width="180" class="m-b15" alt=""/>
+                            <img src="images/cu.jpeg" width="180" class="m-b15" alt=""/>
 							<p class="text-capitalize m-b20">Job Vac gives you a platform to start your career and helps you finding a dream job for you.</p>
                             <div class="subscribe-form m-b20">
 								<form class="dzSubscribe" action="#" method="post">
