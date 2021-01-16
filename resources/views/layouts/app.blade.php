@@ -35,8 +35,10 @@
 
 
     	<!-- FAVICONS ICON -->
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+
+	<link rel="icon" href="images/cu.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/cu.jpeg" />
 	
 	
 	
@@ -112,7 +114,7 @@
                 <div class="container clearfix">
                     <!-- website logo -->
                     <div class="logo-header mostion">
-						<a href="index-2.html"><img src="images/logonew.png" class="logo" alt=""></a>
+						<a href="/home"><img src="images/cu1.jpeg" class="logo" alt=""></a>
 					</div>
                     <!-- nav toggle button -->
                     <!-- nav toggle button -->

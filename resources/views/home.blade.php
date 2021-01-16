@@ -249,7 +249,7 @@
 							<div class="quote-bx">
 								<div class="quote-info">
 									<h4>Make a Difference with Your Online Resume!</h4>
-									<p>Your resume in minutes with JobVac resume assistant is ready!</p>
+									<p>Your resume in minutes with Spectrum Staffing Solutions resume assistant is ready!</p>
 									<a href="{{route('register')}}" class="site-button">Create an Account</a>
 								</div>
 							</div>

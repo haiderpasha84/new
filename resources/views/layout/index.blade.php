@@ -23,10 +23,6 @@
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<!--[if lt IE 9]>
-	<script src="js/html5shiv.min.js"></script>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 	
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/plugins.css')}}">
@@ -39,11 +35,7 @@
 	<link rel="stylesheet" type="text/css" href="{{URL::asset('plugins/revolution/revolution/css/settings.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{URL::asset('plugins/revolution/revolution/css/navigation.css')}}">
 	<!-- Revolution Navigation Style -->
-	<!-- search -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
-	<!-- search end -->
+
 </head>
 <body id="bg">
 <!-- <div id="loading-area"></div> -->
@@ -120,12 +112,12 @@
         <!-- main header END -->
     </header>
     <!-- header END --> 
-@yield('home')
-@yield('browsejob')
-@yield('jobdetail')
-@yield('contactus')
-@yield('content')
-@yield('resume')
+																	@yield('home')
+																	@yield('browsejob')
+																	@yield('jobdetail')
+																	@yield('contactus')
+																	@yield('content')
+																	@yield('resume')
 	<!-- Footer -->
     <footer class="site-footer">
         <div class="footer-top">
@@ -133,8 +125,8 @@
                 <div class="row">
 					<div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
                         <div class="widget">
-                            <img src="images/cu.jpeg" width="180" class="m-b15" alt=""/>
-							<p class="text-capitalize m-b20">Job Vac gives you a platform to start your career and helps you finding a dream job for you.</p>
+                            <img src="images/cu1.jpeg" width="180" class="m-b15" alt=""/>
+							<p class="text-capitalize m-b20">Spectrum Staffing Solutions provides you a platform to start your career and helps you finding a dream job for you.</p>
                             <div class="subscribe-form m-b20">
 								<form class="dzSubscribe" action="#" method="post">
 									<div class="dzSubscribeMsg"></div>
@@ -170,8 +162,7 @@
                             <h5 class="m-b30 text-white">Find Jobs</h5>
                             <ul class="list-2 w10 list-line">
                                 <!-- <li><a href="#">US Jobs</a></li>
-                                <li><a href="#">Canada Jobs</a></li>
-                                <li><a href="#">UK Jobs</a></li> -->
+                                <li><a href="#">Canada Jobs</a></li> -->
 
                             </ul>
                         </div>
@@ -183,7 +174,7 @@
         <div class="footer-bottom">
             <div class="container">
                <div class="row">
-                    <div class="col-lg-12 text-center"><span><a target="_blank" href="/home">Credits To Job Vac</a></span></div>
+                    <div class="col-lg-12 text-center"><span><a target="_blank" href="/home">Credits To Spectrum Staffing Solutions</a></span></div>
                 </div>
             </div>
         </div>
@@ -193,26 +184,9 @@
     <button class="scroltop fa fa-arrow-up" ></button>
 </div>
 <!-- JAVASCRIPT FILES ========================================= -->
-<script src="{{asset('js/jquery.min.js')}}"></script><!-- JQUERY.MIN JS -->
-<script src="{{asset('plugins/wow/wow.js')}}"></script><!-- WOW JS -->
-<script src="{{asset('plugins/bootstrap/js/popper.min.js')}}"></script><!-- BOOTSTRAP.MIN JS -->
-<script src="{{asset('plugins/bootstrap/js/bootstrap.min.js')}}"></script><!-- BOOTSTRAP.MIN JS -->
-<script src="{{asset('plugins/bootstrap-select/bootstrap-select.min.js')}}"></script><!-- FORM JS -->
-<script src="{{asset('plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js')}}"></script><!-- FORM JS -->
-<script src="{{asset('plugins/magnific-popup/magnific-popup.js')}}"></script><!-- MAGNIFIC POPUP JS -->
-<script src="{{asset('plugins/counter/waypoints-min.js')}}"></script><!-- WAYPOINTS JS -->
-<script src="{{asset('plugins/counter/counterup.min.js')}}"></script><!-- COUNTERUP JS -->
-<script src="{{asset('plugins/imagesloaded/imagesloaded.js')}}"></script><!-- IMAGESLOADED -->
-<script src="{{asset('plugins/masonry/masonry-3.1.4.js')}}"></script><!-- MASONRY -->
-<script src="{{asset('plugins/masonry/masonry.filter.js')}}"></script><!-- MASONRY -->
-<script src="{{asset('plugins/owl-carousel/owl.carousel.js')}}"></script><!-- OWL SLIDER -->
-<script src="{{asset('plugins/rangeslider/rangeslider.js')}}" ></script><!-- Rangeslider -->
-<script src="{{asset('js/custom.js')}}"></script><!-- CUSTOM FUCTIONS  -->
-<script src="{{asset('js/dz.carousel.js')}}"></script><!-- SORTCODE FUCTIONS  -->
-<script src='js/recaptcha/api.js'></script> <!-- Google API For Recaptcha  -->
-<script src="{{asset('js/dz.ajax.js')}}"></script><!-- CONTACT JS  -->
-<script src="{{asset('plugins/paroller/skrollr.min.js')}}"></script><!-- PAROLLER -->
-<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+
+<!-- PAROLLER -->
+
 
 </body>
 
