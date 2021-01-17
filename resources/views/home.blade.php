@@ -64,7 +64,8 @@
         </div>
 		<!-- Section Banner END -->
         <!-- About Us -->
-		<div class="section-full job-categories content-inner-2 bg-white" style="background-image:url(../images/pattern/pic1.html);">
+		<!-- <div class="section-full job-categories content-inner-2 bg-white" style="background-image:url(../images/pattern/pic1.jpg);"> -->
+		<div class="section-full job-categories content-inner-2 bg-white">
 			<div class="container">
 				<div class="section-head d-flex head-counter clearfix">
 					<div class="mr-auto">

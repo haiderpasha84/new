@@ -98,7 +98,7 @@
 							<a href="/register" class="site-button"style="color:white;" ><i class="fa fa-user" style="color:white;"></i> Sign Up</a>
 							<a href="/com" class="site-button" style="color:white;"><i class="fa fa-user" style="color:white;"></i> Join As A Company</a>
 							@else
-							<a class="site-button" href="{{ url('/logout') }}" >Logout</a>
+							<a class="site-button" style="color:white;" href="{{ url('/logout') }}" >Logout</a>
 							@endif
 							</li>
 
