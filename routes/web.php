@@ -22,7 +22,8 @@ Route::get('/browsejob', 'BrowseJobController@show')->name('browsejob');
 Route::get('/contactus', 'ContactusController@index')->name('contactus');
 Route::get('/browsejob/{job}', 'BrowseJobController@showsingle')->name('browsejobsingle');
 
-Route::get('/resume', 'SubmitResumeController@index')->name('resume');
+Route::get('/resume/{job}', 'SubmitResumeController@index')->name('resume');
+Route::post('/resume', 'SubmitResumeController@store')->name('resume.store');
 // search
 Route::get('search', 'SearchController@index')->name('search');
 
@@ -55,9 +56,14 @@ Route::get('/company/jobs/create', 'CompanyJobController@create')->name('company
 Route::delete('/company/jobs/{job}/destroy', 'CompanyJobController@destroy')->name('companyjob.destroy');
 Route::get('/company/jobs/{job}/edit', 'CompanyJobController@edit')->name('companyjob.edit');
 Route::patch('/company/jobs/{job}/update', 'CompanyJobController@update')->name('companyjob.update');
+
+Route::get('/company/jobs/pendingApplicants', 'CompanyJobController@applicants')->name('companyjob.pending');
 //for company registration
 Route::get('/com', 'CompanyRegController@index')->name('company.index');
 Route::post('/comreg', 'CompanyRegController@store')->name('company.store');
+
+
+
 
 
 

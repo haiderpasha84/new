@@ -74,7 +74,7 @@
 									<li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
 									<li>DexignLab standard dummy text ever since</li>
 								</ul>
-								<a href="{{route('resume')}}" class="site-button">Apply This Job</a>
+								<a href="{{route('resume' , $job->id)}}" class="site-button">Apply This Job</a>
 							</div>
 						</div>
 					</div>

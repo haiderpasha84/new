@@ -14,11 +14,11 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON -->
-	<link rel="icon" href="images/cu.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/cu.jpeg" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/logonew.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title>Spectrum </title>
+	<title>Job Vac </title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,7 +48,7 @@
                 <div class="container clearfix">
                     <!-- website logo -->
                     <div class="logo-header mostion">
-						<a href="/home"><img src="images/cu1.jpeg" class="logo" alt="" style="height:100px;width:180px;"></a>
+						<a href="/home"><img src="images/logonew.png" class="logo" alt=""></a>
 					</div>
                     <!-- nav toggle button -->
                     <!-- nav toggle button -->
@@ -125,8 +125,8 @@
                 <div class="row">
 					<div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
                         <div class="widget">
-                            <img src="images/cu1.jpeg" width="180" class="m-b15" alt=""/>
-							<p class="text-capitalize m-b20">Spectrum Staffing Solutions provides you a platform to start your career and helps you finding a dream job for you.</p>
+                            <img src="images/logonew.png" width="180" class="m-b15" alt=""/>
+							<p class="text-capitalize m-b20">Job Vac provides you a platform to start your career and helps you finding a dream job for you.</p>
                             <div class="subscribe-form m-b20">
 								<form class="dzSubscribe" action="#" method="post">
 									<div class="dzSubscribeMsg"></div>
@@ -174,7 +174,7 @@
         <div class="footer-bottom">
             <div class="container">
                <div class="row">
-                    <div class="col-lg-12 text-center"><span><a target="_blank" href="/home">Credits To Spectrum Staffing Solutions</a></span></div>
+                    <div class="col-lg-12 text-center"><span><a target="_blank" href="/home">Credits To Job Vac</a></span></div>
                 </div>
             </div>
         </div>

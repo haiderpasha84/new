@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use App\Job;
 use Response;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
+use App\jobrequests;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Console\Scheduling\Schedule;
@@ -157,6 +159,44 @@ class CompanyJobController extends Controller
         $job->delete();
         Session::flash('message', 'Job Deleted Successfully');
         return back();
+    }
+
+    public function saveUserRequests(Request $request)
+    {
+
+        $JobRequests = JobRequests::create([
+
+          'fullname' => $request->fullname,
+          'email' => $request->email,
+          'title' => $request->title,
+          'state' => $request->state,
+          'location' => $request->location,
+          'photo' => $request->photo,
+          'skills' => $request->skills,
+          'content' => $request->content,
+        ]);
+
+        if($JobRequests->save()){
+            return back()->with('success_message', 'Request sent Successfully');
+        }
+    }
+
+        /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function applicants()
+    {
+        //
+      // $requests = jobrequests::where('user_id', '=', User::id())->get();
+           //$users = auth()->user();
+        // $requests = jobrequests::all();
+        // dd($requests);
+
+        return view('company.jobs.pendingjobs');
+    
     }
 
 

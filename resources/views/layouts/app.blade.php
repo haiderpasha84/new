@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Spectrum</title>
+    <title>Job Vac</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -37,8 +37,8 @@
     	<!-- FAVICONS ICON -->
 
 
-	<link rel="icon" href="images/cu.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/cu.jpeg" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/logonew.png" />
 	
 	
 	
@@ -114,7 +114,7 @@
                 <div class="container clearfix">
                     <!-- website logo -->
                     <div class="logo-header mostion">
-						<a href="/home"><img src="images/cu1.jpeg" class="logo" alt=""></a>
+						<a href="/home"><img src="images/logonew.png" class="logo" alt=""></a>
 					</div>
                     <!-- nav toggle button -->
                     <!-- nav toggle button -->

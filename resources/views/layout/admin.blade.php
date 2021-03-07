@@ -51,7 +51,7 @@
       <a class="sidebar-brand d-flex align-items-center justify-content-center" style="margin-top:-70px;">
         <div class="sidebar-brand-icon">
         <div>
-						<a href="#"><img src="images/cu1.jpeg" height="70px;"width="240px;" class="logo" alt=""></a>
+						<a href="#"><img src="images/logonew.png" height="70px;"width="240px;" class="logo" alt=""></a>
 					</div>
         </div>
         

@@ -50,4 +50,9 @@ public function role()
     {
       return $this->belongsToMany('App\Role');
     }
+
+    public function JobRequests()
+    {
+        return $this->hasMany('App\jobrequests');
+    }
 }

@@ -8,6 +8,7 @@ class Job extends Model
 {
     protected $fillable = [
         'user_id',
+        'id',
         'jname',
         'jtype',
         'jimage',
@@ -36,5 +37,12 @@ class Job extends Model
     public function categories(){
         return $this->belongsToMany('App\Category');
     }
+
+    public function jobrequests()
+    {
+        return $this->belongsToMany('App\jobrequests');
+    }
+
+
 
 }

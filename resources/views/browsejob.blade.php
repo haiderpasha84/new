@@ -81,7 +81,7 @@
 									<li><a href="#">3</a></li>
 									<li class="next"><a href="#">Next <i class="ti-arrow-right"></i></a></li>
 								</ul>
-							</div> -->
+								</div> -->
 						</div>
 						<div class="col-xl-3 col-lg-4">
 							<div class="sticky-top">

@@ -60,7 +60,7 @@
       <a class="sidebar-brand d-flex align-items-center justify-content-center" style="margin-top:-70px;">
         <div class="sidebar-brand-icon">
         <div>
-						<a href="#"><img src="images/cu1.jpeg" height="70px;"width="240px;" class="logo" alt=""></a>
+						<a href="#"><img src="images/logonew.png" height="70px;"width="240px;" class="logo" alt=""></a>
 					</div>
         </div>
         
@@ -96,6 +96,7 @@
             <h6 class="collapse-header">Job</h6>
             <a class="collapse-item" href="{{route('companyjob.create')}}">Create A Job</a>
             <a class="collapse-item" href="{{route('companyjob.index')}}">View Jobs</a>
+            <a class="collapse-item" href="{{route('companyjob.pending')}}">Applicants</a>
           </div>
         </div>
       </li>
