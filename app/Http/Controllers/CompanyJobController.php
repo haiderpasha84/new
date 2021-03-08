@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use App\jobrequests;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
@@ -189,13 +190,11 @@ class CompanyJobController extends Controller
      */
     public function applicants()
     {
-        //
-      // $requests = jobrequests::where('user_id', '=', User::id())->get();
-           //$users = auth()->user();
-        // $requests = jobrequests::all();
-        // dd($requests);
-
-        return view('company.jobs.pendingjobs');
+        $requests = DB::table('jobrequests')->join('jobs', 'jobrequests.job_id', 'jobs.id')->get();
+       
+        dd($requests);
+        return view('company.jobs.pendingjobs',['requests'=>$requests]);
+        
     
     }
 
